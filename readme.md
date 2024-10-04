@@ -81,39 +81,30 @@ This collection can be used with Bruno, with the following steps:
 
     ![Graphic displaying the file selector for importing Postman collection files into Bruno](./readme-images/bruno-file-selector.png)
 
-1. Bruno will then ask you where you'd like to save the imported collection. Select any location on your computer. At this point a collection will be available in Bruno, but we still need to add the authentication tools to give you easy access.
+1. Bruno will then ask you where you'd like to save the imported collection. Select any location on your computer you would like to store your work in Bruno
 1. Repeat for the files "sms_postman_collection.json" and "Loyalty Contact API v3.postman_collection.json" if desired.
-1. Click on the three-dot menu next to the imported collection(1.), then click settings(2.):
-
-    ![Graphic displaying the menu options for updating a collection's settings in Bruno](./readme-images/bruno-collection-settings.png)
-
-1. Open the Script tab in Bruno and also open the file "Bruno/pre-request-script.js" from the files you downloaded. Then copy the contents of the file to the "Pre Request" section in Bruno:
-
-    ![Graphic displaying the Bruno Script settings and a window containing a javascript file with arrows indicating that you should copy the text from the file into Bruno's text box](./readme-images/bruno-pre-request-script.png)
 
 1. After your first installation, follow the steps for configuring your environments in the next section before sending your first request
 
 
 
-## Configuring Bruno
+## Configuring Bruno for Suite APIs/ SMS APIs:
+
+Unlike Postman, Bruno has direct support for the WSSE authentication which is used for the Emarsys contact and SMS APIs. Before sending a request, open the Auth tab, select WSSE from the dropdown, and enter your API user and Secret.
+
+- These values are provided when creating an API user in Emarsys
+- Please make sure your API user has the correct Permissions selected in Emarsys to allow for the API call you're testing
+
+
+The required variables for your environment will depend on which APIs you use:
+
+## Configuring Bruno for other Emarsys APIs
 
 This collection uses Bruno Environment Variables to manage the credentials for the account(s) you work with.
 
 ![A sample of a fully-configured Postman Environment](./readme-images/bruno-sample-environment.png)
 
 [This guide goes over how to create those environments](https://docs.usebruno.com/secrets-management/secret-variables)
-
-If you work with multiple Emarsys accounts, use a separate Bruno Environment for each account.
-
-
-The required variables for your environment will depend on which APIs you use:
-
-### Suite APIs/ SMS APIs:
-- wsse-user
-- wsse-secret
-  - These values are provided when creating an API user in Emarsys
-  - Please make sure your API user has the correct Permissions selected in Emarsys to allow for the API call you're testing
-  - Note that the value that gets used in the API calls themselves is "wsse-header" - that value is derived from the other two variables above
 
 ### Sales uploads (part of the Suite APIs):
 - sales-bearer-token
