@@ -850,6 +850,60 @@
 					"response": []
 				},
 				{
+					"name": "Fetch Contacts in a Contact List",
+					"event": [],
+					"request": {
+					  "method": "GET",
+					  "header": [
+						{
+							"key": "X-WSSE",
+							"value": "{{wsse-header}}"
+						},
+						{
+							"key": "Accept",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					  "description": "Returns a list of contact identifiers (contactIds) from the contact list.",
+					  "url": {
+						"raw": "https://api.emarsys.net/api/v2/contactlist/:listId/contactIds?$skiptoken=0&$top=0",
+						"protocol": "https",
+						"host": [
+						  "api",
+						  "emarsys",
+						  "net"
+						],
+						"path": [
+						  "api",
+						  "v2",
+						  "contactlist",
+						  ":listId",
+						  "contactIds"
+						],
+						"query": [
+						  {
+							"key": "$skiptoken",
+							"value": "0"
+						  },
+						  {
+							"key": "$top",
+							"value": "0"
+						  }
+						],
+						"variable": [
+						  {
+							"key": "listId",
+							"value": ""
+						  }
+						]
+					  }
+					}
+				  },
+				{
 					"name": "List Contacts in a Contact List",
 					"request": {
 						"method": "GET",
@@ -898,64 +952,6 @@
 							]
 						},
 						"description": "Returns a list of contacts and their identifiers (`id`) in a contact list."
-					},
-					"response": []
-				},
-				{
-					"name": "Get Contact Data in a Contact List",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "X-WSSE",
-								"value": "{{wsse-header}}"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://api.emarsys.net/api/v2/contactlist/:listId/contacts/data?fields={{fields}}&limit=&offset=0",
-							"protocol": "https",
-							"host": [
-								"api",
-								"emarsys",
-								"net"
-							],
-							"path": [
-								"api",
-								"v2",
-								"contactlist",
-								":listId",
-								"contacts",
-								"data"
-							],
-							"query": [
-								{
-									"key": "fields",
-									"value": "{{fields}}"
-								},
-								{
-									"key": "limit",
-									"value": ""
-								},
-								{
-									"key": "offset",
-									"value": "0"
-								}
-							],
-							"variable": [
-								{
-									"key": "listId"
-								}
-							]
-						},
-						"description": "Returns the data of the specified contacts in a contact list."
 					},
 					"response": []
 				},
@@ -2812,9 +2808,69 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Launch a Campaign to virtual contacts (Broadcasts)",
+					"event": [],
+					"request": {
+					  "method": "POST",
+					  "header": [
+						{
+							"key": "X-WSSE",
+							"value": "{{wsse-header}}"
+						},
+						{
+							"key": "Accept",
+							"value": "application/json",
+							"disabled": false,
+							"type": "default"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"disabled": false,
+							"type": "default"
+						}
+					  ],
+					  "auth": null,
+					  "description": "https://dev.emarsys.com/docs/core-api-reference/j6gf5nik4ei7o-launch-an-email-campaign-to-virtual-contacts-broadcast",
+					  "url": {
+						"raw": "https://api.emarsys.net/api/v2/email/:emailId/broadcast",
+						"protocol": "https",
+						"host": [
+						  "api",
+						  "emarsys",
+						  "net"
+						],
+						"path": [
+						  "api",
+						  "v2",
+						  "email",
+						  ":emailId",
+						  "broadcast"
+						],
+						"query": [],
+						"variable": [
+						  {
+							"key": "emailId",
+							"value": ""
+						  }
+						]
+					  },
+					  "body": {
+						"mode": "raw",
+						"options": {
+						  "raw": {
+							"language": "json"
+						  }
+						}
+					  }
+					},
+					"response": []
 				}
 			]
 		},
+		
 		{
 			"name": "Media Database",
 			"item": [
@@ -4707,7 +4763,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/rds/connection/:connectionName/tables/:tableName/records?{keyField}={{{keyField}}}",
+							"raw": "https://api.emarsys.net/api/rds/connections/:connectionName/tables/:tableName/records?{keyField}={{{keyField}}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4717,7 +4773,7 @@
 							"path": [
 								"api",
 								"rds",
-								"connection",
+								"connections",
 								":connectionName",
 								"tables",
 								":tableName",
@@ -4765,7 +4821,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/rds/connection/:connectionName/tables/:tableName/records",
+							"raw": "https://api.emarsys.net/api/rds/connections/:connectionName/tables/:tableName/records",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4775,7 +4831,7 @@
 							"path": [
 								"api",
 								"rds",
-								"connection",
+								"connections",
 								":connectionName",
 								"tables",
 								":tableName",
@@ -4817,7 +4873,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/rds/connection/:connectionName/tables/:tableName/records",
+							"raw": "https://api.emarsys.net/api/rds/connections/:connectionName/tables/:tableName/records",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4827,7 +4883,7 @@
 							"path": [
 								"api",
 								"rds",
-								"connection",
+								"connections",
 								":connectionName",
 								"tables",
 								":tableName",
@@ -4869,7 +4925,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/rds/connection/:connectionName/tables/<:tableName>/records",
+							"raw": "https://api.emarsys.net/api/rds/connections/:connectionName/tables/<:tableName>/records",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4879,7 +4935,7 @@
 							"path": [
 								"api",
 								"rds",
-								"connection",
+								"connections",
 								":connectionName",
 								"tables",
 								"<:tableName>",
@@ -4919,7 +4975,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/rds/connection/:connectionName/tables/:tableName/records/remove",
+							"raw": "https://api.emarsys.net/api/rds/connections/:connectionName/tables/:tableName/records/remove",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4929,7 +4985,7 @@
 							"path": [
 								"api",
 								"rds",
-								"connection",
+								"connections",
 								":connectionName",
 								"tables",
 								":tableName",
@@ -4974,7 +5030,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/rds/connection/:connectionName/tables/:tableName/records/upsert",
+							"raw": "https://api.emarsys.net/api/rds/connections/:connectionName/tables/:tableName/records/upsert",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4984,7 +5040,7 @@
 							"path": [
 								"api",
 								"rds",
-								"connection",
+								"connections",
 								":connectionName",
 								"tables",
 								":tableName",
