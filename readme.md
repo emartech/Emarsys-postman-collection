@@ -98,9 +98,15 @@ Unlike Postman, Bruno has direct support for the WSSE authentication which is us
 - Please make sure your API user has the correct Permissions selected in Emarsys to allow for the API call you're testing
 
 
-The required variables for your environment will depend on which APIs you use:
+
 
 ## Configuring Bruno for other Emarsys APIs
+
+This collection uses Bruno Environment Variables to manage the credentials for the account(s) you work with.
+![A sample of a fully-configured Postman Environment](./readme-images/bruno-sample-environment.png)
+[This guide goes over how to create those environments](https://docs.usebruno.com/secrets-management/secret-variables)
+
+The required variables for your environment will depend on which APIs you use:
 
 ### Sales uploads (part of the Suite APIs):
 - sales-bearer-token
