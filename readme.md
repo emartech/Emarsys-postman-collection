@@ -116,6 +116,9 @@ The required variables for your environment will depend on which APIs you use:
 ### Loyalty (V2 and V3):
 - loyalty-api-key
 
+### Loyalty (v4):
+- apiKey
+
 ## Bruno-specific notes
 
 1. Bruno doesn't support "path parameters" which are parts of the link before the question mark that can be changed to determine what data you retrieve. These parameters are marked with a colon and then the parameter name (such as ":languageId" in the Fields/List Available Fields API). To use these in Bruno, simply replace the colon and the name with the value you'd like to send in your API request
