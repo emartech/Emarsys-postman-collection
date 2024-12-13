@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "07a93544-91be-4637-a446-d9b889d03e91",
-		"name": "Emarsys - Suite and Sales APIs - V3",
+		"_postman_id": "c1150cf9-5973-4ec7-9e30-0374fc5d6e3a",
+		"name": "Emarsys - Suite and Sales APIs",
 		"description": "The Emarsys Developer Hub provides guides, resources, use cases and interactive reference that helps you integrate with the Emarsys Marketing Platform to deliver personal customer interactions across email, mobile, social, SMS, and web.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "34086509"
+		"_exporter_id": "7129814"
 	},
 	"item": [
 		{
@@ -16,6 +16,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -25,7 +29,6 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contact/query/?return=3&3=sample-email@email.com&excludeempty=true",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -34,7 +37,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"contact",
 								"query",
 								""
@@ -76,6 +79,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -89,7 +96,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contact/getdata",
+							"raw": "https://api.emarsys.net/api/v2/contact/getdata",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -98,7 +105,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"contact",
 								"getdata"
 							]
@@ -113,6 +120,10 @@
 						"method": "PUT",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -126,7 +137,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contact?create_if_not_exists={{create_if_not_exists}}",
+							"raw": "https://api.emarsys.net/api/v2/contact?create_if_not_exists={{create_if_not_exists}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -135,7 +146,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"contact"
 							],
 							"query": [
@@ -155,6 +166,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -168,7 +183,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contact",
+							"raw": "https://api.emarsys.net/api/v2/contact",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -177,7 +192,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"contact"
 							]
 						},
@@ -191,6 +206,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -204,7 +223,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contact/delete",
+							"raw": "https://api.emarsys.net/api/v2/contact/delete",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -213,7 +232,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"contact",
 								"delete"
 							]
@@ -228,6 +247,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -237,7 +260,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contact/query/:keyId=:keyValue",
+							"raw": "https://api.emarsys.net/api/v2/contact/query/:keyId=:keyValue",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -246,7 +269,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"contact",
 								"query",
 								":keyId=:keyValue"
@@ -267,6 +290,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -280,7 +307,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contact/checkids",
+							"raw": "https://api.emarsys.net/api/v2/contact/checkids",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -289,7 +316,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"contact",
 								"checkids"
 							]
@@ -304,6 +331,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -317,7 +348,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contact/getcontacthistory",
+							"raw": "https://api.emarsys.net/api/v2/contact/getcontacthistory",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -326,7 +357,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"contact",
 								"getcontacthistory"
 							]
@@ -346,6 +377,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -355,7 +390,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/field/translate/:languageId",
+							"raw": "https://api.emarsys.net/api/v2/field/translate/:languageId",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -364,15 +399,14 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"field",
 								"translate",
 								":languageId"
 							],
 							"variable": [
 								{
-									"key": "languageId",
-									"value": ""
+									"key": "languageId"
 								}
 							]
 						},
@@ -385,6 +419,10 @@
 					"request": {
 						"method": "POST",
 						"header": [
+							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
 							{
 								"key": "Accept",
 								"value": "application/json"
@@ -399,7 +437,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/field",
+							"raw": "https://api.emarsys.net/api/v2/field",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -408,7 +446,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"field"
 							]
 						},
@@ -422,6 +460,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -431,7 +473,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/field/:fieldID/choice/translate/:languageId",
+							"raw": "https://api.emarsys.net/api/v2/field/:fieldID/choice/translate/:languageId",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -440,7 +482,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"field",
 								":fieldID",
 								"choice",
@@ -466,6 +508,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -475,7 +521,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contact/last_change",
+							"raw": "https://api.emarsys.net/api/v2/contact/last_change",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -484,7 +530,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"contact",
 								"last_change"
 							]
@@ -499,6 +545,10 @@
 						"method": "DELETE",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -512,7 +562,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/field/:fieldId",
+							"raw": "https://api.emarsys.net/api/v2/field/:fieldId",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -521,7 +571,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"field",
 								":fieldId"
 							],
@@ -546,6 +596,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -555,7 +609,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contactlist",
+							"raw": "https://api.emarsys.net/api/v2/contactlist",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -564,7 +618,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"contactlist"
 							]
 						},
@@ -578,6 +632,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -591,7 +649,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contactlist",
+							"raw": "https://api.emarsys.net/api/v2/contactlist",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -600,7 +658,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"contactlist"
 							]
 						}
@@ -613,6 +671,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -626,7 +688,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contactlist/:listId/add",
+							"raw": "https://api.emarsys.net/api/v2/contactlist/:listId/add",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -635,7 +697,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"contactlist",
 								":listId",
 								"add"
@@ -656,6 +718,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -669,7 +735,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contactlist/:listId/rename",
+							"raw": "https://api.emarsys.net/api/v2/contactlist/:listId/rename",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -678,7 +744,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"contactlist",
 								":listId",
 								"rename"
@@ -699,6 +765,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -708,7 +778,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contactlist/:listId/count",
+							"raw": "https://api.emarsys.net/api/v2/contactlist/:listId/count",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -717,7 +787,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"contactlist",
 								":listId",
 								"count"
@@ -738,6 +808,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -751,7 +825,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contactlist/:listId/replace",
+							"raw": "https://api.emarsys.net/api/v2/contactlist/:listId/replace",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -760,7 +834,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"contactlist",
 								":listId",
 								"replace"
@@ -777,6 +851,60 @@
 				},
 				{
 					"name": "Fetch Contacts in a Contact List",
+					"event": [],
+					"request": {
+					  "method": "GET",
+					  "header": [
+						{
+							"key": "X-WSSE",
+							"value": "{{wsse-header}}"
+						},
+						{
+							"key": "Accept",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					  "description": "Returns a list of contact identifiers (contactIds) from the contact list.",
+					  "url": {
+						"raw": "https://api.emarsys.net/api/v2/contactlist/:listId/contactIds?$skiptoken=0&$top=0",
+						"protocol": "https",
+						"host": [
+						  "api",
+						  "emarsys",
+						  "net"
+						],
+						"path": [
+						  "api",
+						  "v2",
+						  "contactlist",
+						  ":listId",
+						  "contactIds"
+						],
+						"query": [
+						  {
+							"key": "$skiptoken",
+							"value": "0"
+						  },
+						  {
+							"key": "$top",
+							"value": "0"
+						  }
+						],
+						"variable": [
+						  {
+							"key": "listId",
+							"value": ""
+						  }
+						]
+					  }
+					}
+				  },
+				{
+					"name": "List Contacts in a Contact List",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -794,7 +922,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v2/contactlist/:listId/contactIds?$skiptoken=0&$top=0",
+							"raw": "https://api.emarsys.net/api/v2/contactlist/:listId?offset=0&limit=",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -804,56 +932,6 @@
 							"path": [
 								"api",
 								"v2",
-								"contactlist",
-								":listId",
-								"contactIds"
-							],
-							"query": [
-								{
-									"key": "$skiptoken",
-									"value": "0"
-								},
-								{
-									"key": "$top",
-									"value": "0"
-								}
-							],
-							"variable": [
-								{
-									"key": "listId",
-									"value": ""
-								}
-							]
-						},
-						"description": "Returns a list of contact identifiers (contactIds) from the contact list."
-					},
-					"response": []
-				},
-				{
-					"name": "List Contacts in a Contact List",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contactlist/:listId?offset=0&limit=",
-							"protocol": "https",
-							"host": [
-								"api",
-								"emarsys",
-								"net"
-							],
-							"path": [
-								"api",
-								"v3",
 								"contactlist",
 								":listId"
 							],
@@ -883,6 +961,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -892,7 +974,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contactlist/:listId/contacts/:contactId",
+							"raw": "https://api.emarsys.net/api/v2/contactlist/:listId/contacts/:contactId",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -901,7 +983,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"contactlist",
 								":listId",
 								"contacts",
@@ -926,6 +1008,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -939,7 +1025,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contactlist/:listId/delete",
+							"raw": "https://api.emarsys.net/api/v2/contactlist/:listId/delete",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -948,7 +1034,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"contactlist",
 								":listId",
 								"delete"
@@ -969,6 +1055,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -982,7 +1072,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contactlist/:listId/deletelist",
+							"raw": "https://api.emarsys.net/api/v2/contactlist/:listId/deletelist",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -991,7 +1081,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"contactlist",
 								":listId",
 								"deletelist"
@@ -1017,6 +1107,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -1026,7 +1120,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/filter",
+							"raw": "https://api.emarsys.net/api/v2/filter",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1035,7 +1129,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"filter"
 							]
 						},
@@ -1049,6 +1143,10 @@
 						"method": "PUT",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -1062,7 +1160,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/filter",
+							"raw": "https://api.emarsys.net/api/v2/filter",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1071,7 +1169,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"filter"
 							]
 						},
@@ -1085,6 +1183,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -1094,7 +1196,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/combinedsegments",
+							"raw": "https://api.emarsys.net/api/v2/combinedsegments",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1103,7 +1205,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"combinedsegments"
 							]
 						},
@@ -1116,6 +1218,10 @@
 					"request": {
 						"method": "POST",
 						"header": [
+							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
 							{
 								"key": "Accept",
 								"value": "application/json"
@@ -1130,7 +1236,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/combinedsegments",
+							"raw": "https://api.emarsys.net/api/v2/combinedsegments",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1139,7 +1245,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"combinedsegments"
 							]
 						},
@@ -1153,6 +1259,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -1162,7 +1272,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/filter/:segmentId/contacts/count",
+							"raw": "https://api.emarsys.net/api/v2/filter/:segmentId/contacts/count",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1171,7 +1281,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"filter",
 								":segmentId",
 								"contacts",
@@ -1193,6 +1303,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -1202,7 +1316,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/filter/:segmentId/contacts?limit=&offset=0",
+							"raw": "https://api.emarsys.net/api/v2/filter/:segmentId/contacts?limit=&offset=0",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1211,7 +1325,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"filter",
 								":segmentId",
 								"contacts"
@@ -1242,6 +1356,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -1251,7 +1369,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/combinedsegments/:combinedSegmentId",
+							"raw": "https://api.emarsys.net/api/v2/combinedsegments/:combinedSegmentId",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1260,7 +1378,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"combinedsegments",
 								":combinedSegmentId"
 							],
@@ -1280,6 +1398,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -1293,7 +1415,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/combinedsegments/:combinedSegmentId",
+							"raw": "https://api.emarsys.net/api/v2/combinedsegments/:combinedSegmentId",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1302,7 +1424,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"combinedsegments",
 								":combinedSegmentId"
 							],
@@ -1322,6 +1444,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -1331,7 +1457,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/filter/:segmentId/contact_criteria",
+							"raw": "https://api.emarsys.net/api/v2/filter/:segmentId/contact_criteria",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1340,7 +1466,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"filter",
 								":segmentId",
 								"contact_criteria"
@@ -1361,6 +1487,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -1370,7 +1500,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/filter/:segmentId/contacts/:contactId",
+							"raw": "https://api.emarsys.net/api/v2/filter/:segmentId/contacts/:contactId",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1379,7 +1509,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"filter",
 								":segmentId",
 								"contacts",
@@ -1404,6 +1534,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -1413,7 +1547,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/filter/:segmentId/delete",
+							"raw": "https://api.emarsys.net/api/v2/filter/:segmentId/delete",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1422,7 +1556,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"filter",
 								":segmentId",
 								"delete"
@@ -1447,6 +1581,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -1456,7 +1594,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/source",
+							"raw": "https://api.emarsys.net/api/v2/source",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1465,7 +1603,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"source"
 							]
 						}
@@ -1477,6 +1615,10 @@
 					"request": {
 						"method": "POST",
 						"header": [
+							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
 							{
 								"key": "Accept",
 								"value": "application/json"
@@ -1491,7 +1633,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/source/create",
+							"raw": "https://api.emarsys.net/api/v2/source/create",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1500,7 +1642,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"source",
 								"create"
 							]
@@ -1515,6 +1657,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -1524,7 +1670,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/source/:sourceId",
+							"raw": "https://api.emarsys.net/api/v2/source/:sourceId",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1533,7 +1679,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"source",
 								":sourceId"
 							],
@@ -1558,6 +1704,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -1567,7 +1717,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/form",
+							"raw": "https://api.emarsys.net/api/v2/form",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1576,7 +1726,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"form"
 							]
 						},
@@ -1595,6 +1745,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -1604,7 +1758,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email?status={{status}}&launched={{launched}}&contactlist={{contactlist}}&showdeleted={{showdeleted}}&fromdate={{fromdate}}&todate={{todate}}&root_campaign_id={{root_campaign_id}}&template={{template}}&content_type={{content_type}}&campaign_type={{campaign_type}}&parent_campaign_id={{parent_campaign_id}}&behavior_channel={{behavior_channel}}&email_category={{email_category}}",
+							"raw": "https://api.emarsys.net/api/v2/email?status={{status}}&launched={{launched}}&contactlist={{contactlist}}&showdeleted={{showdeleted}}&fromdate={{fromdate}}&todate={{todate}}&root_campaign_id={{root_campaign_id}}&template={{template}}&content_type={{content_type}}&campaign_type={{campaign_type}}&parent_campaign_id={{parent_campaign_id}}&behavior_channel={{behavior_channel}}&email_category={{email_category}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1613,7 +1767,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email"
 							],
 							"query": [
@@ -1681,6 +1835,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -1694,7 +1852,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email",
+							"raw": "https://api.emarsys.net/api/v2/email",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1703,7 +1861,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email"
 							]
 						},
@@ -1717,6 +1875,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -1726,7 +1888,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId?raw={{raw}}",
+							"raw": "https://api.emarsys.net/api/v2/email/:emailId?raw={{raw}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1735,7 +1897,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								":emailId"
 							],
@@ -1761,6 +1923,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -1770,7 +1936,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/language",
+							"raw": "https://api.emarsys.net/api/v2/language",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1779,7 +1945,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"language"
 							]
 						},
@@ -1793,6 +1959,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -1802,7 +1972,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/emailcategory",
+							"raw": "https://api.emarsys.net/api/v2/emailcategory",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1811,7 +1981,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"emailcategory"
 							]
 						},
@@ -1824,6 +1994,10 @@
 					"request": {
 						"method": "POST",
 						"header": [
+							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
 							{
 								"key": "Accept",
 								"value": "application/json"
@@ -1838,7 +2012,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/version",
+							"raw": "https://api.emarsys.net/api/v2/email/:emailId/version",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1847,7 +2021,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								":emailId",
 								"version"
@@ -1868,6 +2042,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -1881,7 +2059,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/finalize",
+							"raw": "https://api.emarsys.net/api/v2/email/:emailId/finalize",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1890,7 +2068,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								":emailId",
 								"finalize"
@@ -1911,6 +2089,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -1924,7 +2106,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/copy?name={{name}}",
+							"raw": "https://api.emarsys.net/api/v2/email/:emailId/copy?name={{name}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1933,7 +2115,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								":emailId",
 								"copy"
@@ -1960,6 +2142,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -1973,7 +2159,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/patch",
+							"raw": "https://api.emarsys.net/api/v2/email/:emailId/patch",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -1982,7 +2168,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								":emailId",
 								"patch"
@@ -2003,6 +2189,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -2016,7 +2206,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/blacklist",
+							"raw": "https://api.emarsys.net/api/v2/blacklist",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2025,7 +2215,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"blacklist"
 							]
 						},
@@ -2039,6 +2229,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -2052,7 +2246,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/updatesource",
+							"raw": "https://api.emarsys.net/api/v2/email/:emailId/updatesource",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2061,7 +2255,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								":emailId",
 								"updatesource"
@@ -2082,6 +2276,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -2095,7 +2293,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/delete",
+							"raw": "https://api.emarsys.net/api/v2/email/delete",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2104,7 +2302,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								"delete"
 							]
@@ -2123,6 +2321,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -2136,7 +2338,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/preview",
+							"raw": "https://api.emarsys.net/api/v2/email/:emailId/preview",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2145,7 +2347,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								":emailId",
 								"preview"
@@ -2166,6 +2368,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -2179,7 +2385,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/sendtestmail",
+							"raw": "https://api.emarsys.net/api/v2/email/:emailId/sendtestmail",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2188,7 +2394,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								":emailId",
 								"sendtestmail"
@@ -2209,6 +2415,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -2222,7 +2432,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/launch",
+							"raw": "https://api.emarsys.net/api/v2/email/:emailId/launch",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2231,7 +2441,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								":emailId",
 								"launch"
@@ -2252,6 +2462,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -2265,7 +2479,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/getdeliverystatus",
+							"raw": "https://api.emarsys.net/api/v2/email/getdeliverystatus",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2274,7 +2488,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								"getdeliverystatus"
 							]
@@ -2289,6 +2503,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -2302,7 +2520,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/responses",
+							"raw": "https://api.emarsys.net/api/v2/email/responses",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2311,7 +2529,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								"responses"
 							]
@@ -2326,6 +2544,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -2335,7 +2557,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:queryId/responses",
+							"raw": "https://api.emarsys.net/api/v2/email/:queryId/responses",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2344,7 +2566,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								":queryId",
 								"responses"
@@ -2365,6 +2587,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -2374,7 +2600,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/responsesummary?launch_id={{launch_id}}&start_date={{start_date}}&end_date={{end_date}}",
+							"raw": "https://api.emarsys.net/api/v2/email/:emailId/responsesummary?launch_id={{launch_id}}&start_date={{start_date}}&end_date={{end_date}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2383,7 +2609,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								":emailId",
 								"responsesummary"
@@ -2418,6 +2644,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -2431,7 +2661,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/getlaunchesofemail",
+							"raw": "https://api.emarsys.net/api/v2/email/getlaunchesofemail",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2440,7 +2670,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								"getlaunchesofemail"
 							]
@@ -2455,6 +2685,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -2464,7 +2698,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/personalization",
+							"raw": "https://api.emarsys.net/api/v2/email/:emailId/personalization",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2473,7 +2707,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								":emailId",
 								"personalization"
@@ -2494,6 +2728,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -2507,7 +2745,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/url",
+							"raw": "https://api.emarsys.net/api/v2/email/:emailId/url",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2516,7 +2754,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								":emailId",
 								"url"
@@ -2537,6 +2775,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -2550,54 +2792,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/unsubscribe",
-							"protocol": "https",
-							"host": [
-								"api",
-								"emarsys",
-								"net"
-							],
-							"path": [
-								"api",
-								"v3",
-								"email",
-								"unsubscribe"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Launch a Campaign to virtual contacts (Broadcasts)",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "X-WSSE",
-								"value": "{{wsse-header}}"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "default"
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"type": "default"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://api.emarsys.net/api/v2/email/:emailId/broadcast",
+							"raw": "https://api.emarsys.net/api/v2/email/unsubscribe",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2608,22 +2803,74 @@
 								"api",
 								"v2",
 								"email",
-								":emailId",
-								"broadcast"
-							],
-							"variable": [
-								{
-									"key": "emailId",
-									"value": ""
-								}
+								"unsubscribe"
 							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Launch a Campaign to virtual contacts (Broadcasts)",
+					"event": [],
+					"request": {
+					  "method": "POST",
+					  "header": [
+						{
+							"key": "X-WSSE",
+							"value": "{{wsse-header}}"
 						},
-						"description": "https://dev.emarsys.com/docs/core-api-reference/j6gf5nik4ei7o-launch-an-email-campaign-to-virtual-contacts-broadcast"
+						{
+							"key": "Accept",
+							"value": "application/json",
+							"disabled": false,
+							"type": "default"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"disabled": false,
+							"type": "default"
+						}
+					  ],
+					  "auth": null,
+					  "description": "https://dev.emarsys.com/docs/core-api-reference/j6gf5nik4ei7o-launch-an-email-campaign-to-virtual-contacts-broadcast",
+					  "url": {
+						"raw": "https://api.emarsys.net/api/v2/email/:emailId/broadcast",
+						"protocol": "https",
+						"host": [
+						  "api",
+						  "emarsys",
+						  "net"
+						],
+						"path": [
+						  "api",
+						  "v2",
+						  "email",
+						  ":emailId",
+						  "broadcast"
+						],
+						"query": [],
+						"variable": [
+						  {
+							"key": "emailId",
+							"value": ""
+						  }
+						]
+					  },
+					  "body": {
+						"mode": "raw",
+						"options": {
+						  "raw": {
+							"language": "json"
+						  }
+						}
+					  }
 					},
 					"response": []
 				}
 			]
 		},
+		
 		{
 			"name": "Media Database",
 			"item": [
@@ -2632,6 +2879,10 @@
 					"request": {
 						"method": "GET",
 						"header": [
+							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
 							{
 								"key": "Accept",
 								"value": "application/json"
@@ -2642,7 +2893,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/folder?folder={{folder}}",
+							"raw": "https://api.emarsys.net/api/v2/folder?folder={{folder}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2651,7 +2902,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"folder"
 							],
 							"query": [
@@ -2671,6 +2922,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -2684,7 +2939,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/folder",
+							"raw": "https://api.emarsys.net/api/v2/folder",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2693,7 +2948,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"folder"
 							]
 						},
@@ -2707,6 +2962,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -2716,7 +2975,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/file?folder={{folder}}",
+							"raw": "https://api.emarsys.net/api/v2/file?folder={{folder}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2725,7 +2984,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"file"
 							],
 							"query": [
@@ -2745,6 +3004,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -2758,7 +3021,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/file",
+							"raw": "https://api.emarsys.net/api/v2/file",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2767,7 +3030,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"file"
 							]
 						},
@@ -2781,6 +3044,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -2790,7 +3057,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/file/:fileId",
+							"raw": "https://api.emarsys.net/api/v2/file/:fileId",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2799,7 +3066,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"file",
 								":fileId"
 							],
@@ -2819,6 +3086,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -2832,7 +3103,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/file/:fileId/delete",
+							"raw": "https://api.emarsys.net/api/v2/file/:fileId/delete",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2841,7 +3112,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"file",
 								":fileId",
 								"delete"
@@ -2867,6 +3138,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -2876,7 +3151,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/condition",
+							"raw": "https://api.emarsys.net/api/v2/condition",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2885,7 +3160,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"condition"
 							]
 						},
@@ -2904,6 +3179,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -2913,7 +3192,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/templates",
+							"raw": "https://api.emarsys.net/api/v2/email/templates",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2922,7 +3201,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								"templates"
 							]
@@ -2937,6 +3216,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -2946,7 +3229,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/templates/:templateId",
+							"raw": "https://api.emarsys.net/api/v2/email/templates/:templateId",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2955,7 +3238,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								"templates",
 								":templateId"
@@ -2981,6 +3264,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -2990,7 +3277,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/trackedlinks/:linkId",
+							"raw": "https://api.emarsys.net/api/v2/email/:emailId/trackedlinks/:linkId",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -2999,7 +3286,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								":emailId",
 								"trackedlinks",
@@ -3024,6 +3311,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -3037,7 +3328,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/trackedlinks/:linkId",
+							"raw": "https://api.emarsys.net/api/v2/email/:emailId/trackedlinks/:linkId",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -3046,7 +3337,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								":emailId",
 								"trackedlinks",
@@ -3071,6 +3362,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -3080,7 +3375,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/settings/linkcategories",
+							"raw": "https://api.emarsys.net/api/v2/settings/linkcategories",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -3089,7 +3384,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"settings",
 								"linkcategories"
 							]
@@ -3104,6 +3399,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -3117,7 +3416,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/trackedlinks",
+							"raw": "https://api.emarsys.net/api/v2/email/:emailId/trackedlinks",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -3126,7 +3425,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								":emailId",
 								"trackedlinks"
@@ -3147,6 +3446,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -3160,7 +3463,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/deletetrackedlinks/:linkId",
+							"raw": "https://api.emarsys.net/api/v2/email/:emailId/deletetrackedlinks/:linkId",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -3169,7 +3472,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								":emailId",
 								"deletetrackedlinks",
@@ -3199,6 +3502,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -3208,7 +3515,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/sections",
+							"raw": "https://api.emarsys.net/api/v2/email/:emailId/sections",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -3217,7 +3524,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								":emailId",
 								"sections"
@@ -3238,6 +3545,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -3251,7 +3562,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/sections",
+							"raw": "https://api.emarsys.net/api/v2/email/:emailId/sections",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -3260,7 +3571,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								":emailId",
 								"sections"
@@ -3281,6 +3592,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -3290,7 +3605,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/sections/:sectionId",
+							"raw": "https://api.emarsys.net/api/v2/email/:emailId/sections/:sectionId",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -3299,7 +3614,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								":emailId",
 								"sections",
@@ -3324,6 +3639,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -3337,7 +3656,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/sections/:sectionId",
+							"raw": "https://api.emarsys.net/api/v2/email/:emailId/sections/:sectionId",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -3346,7 +3665,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								":emailId",
 								"sections",
@@ -3371,6 +3690,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -3384,7 +3707,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/sections/:sectionId/delete",
+							"raw": "https://api.emarsys.net/api/v2/email/:emailId/sections/:sectionId/delete",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -3393,7 +3716,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								":emailId",
 								"sections",
@@ -3484,6 +3807,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -3535,6 +3862,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -3544,7 +3875,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/event/:eventId",
+							"raw": "https://api.emarsys.net/api/v2/event/:eventId",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -3553,7 +3884,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"event",
 								":eventId"
 							],
@@ -3573,6 +3904,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -3582,7 +3917,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/event/:eventId/usages",
+							"raw": "https://api.emarsys.net/api/v2/event/:eventId/usages",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -3591,7 +3926,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"event",
 								":eventId",
 								"usages"
@@ -3619,6 +3954,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -3632,7 +3971,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/event/:eventId",
+							"raw": "https://api.emarsys.net/api/v2/event/:eventId",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -3641,7 +3980,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"event",
 								":eventId"
 							],
@@ -3661,6 +4000,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -3674,7 +4017,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/event",
+							"raw": "https://api.emarsys.net/api/v2/event",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -3683,7 +4026,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"event"
 							]
 						},
@@ -3697,6 +4040,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -3710,7 +4057,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/event/:eventId/trigger",
+							"raw": "https://api.emarsys.net/api/v2/event/:eventId/trigger",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -3719,7 +4066,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"event",
 								":eventId",
 								"trigger"
@@ -3740,6 +4087,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -3753,7 +4104,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/event/:eventId/delete",
+							"raw": "https://api.emarsys.net/api/v2/event/:eventId/delete",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -3762,7 +4113,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"event",
 								":eventId",
 								"delete"
@@ -3788,6 +4139,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -3797,7 +4152,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/ac/programs",
+							"raw": "https://api.emarsys.net/api/v2/ac/programs",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -3806,7 +4161,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"ac",
 								"programs"
 							]
@@ -3821,6 +4176,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -3834,7 +4193,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/ac/programs/:program_id/abort",
+							"raw": "https://api.emarsys.net/api/v2/ac/programs/:program_id/abort",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -3843,7 +4202,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"ac",
 								"programs",
 								":program_id",
@@ -3866,6 +4225,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -3879,7 +4242,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/ac/programs/:program_id/delete",
+							"raw": "https://api.emarsys.net/api/v2/ac/programs/:program_id/delete",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -3888,7 +4251,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"ac",
 								"programs",
 								":program_id",
@@ -3910,6 +4273,10 @@
 					"request": {
 						"method": "GET",
 						"header": [
+							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
 							{
 								"key": "Accept",
 								"value": "application/json"
@@ -3954,6 +4321,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -3967,7 +4338,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/ac/programs/entrypoints/:nodeType/resources/:resourceId/runs",
+							"raw": "https://api.emarsys.net/api/v2/ac/programs/entrypoints/:nodeType/resources/:resourceId/runs",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -3976,7 +4347,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"ac",
 								"programs",
 								"entrypoints",
@@ -4009,6 +4380,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -4022,7 +4397,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contact/getchanges",
+							"raw": "https://api.emarsys.net/api/v2/contact/getchanges",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4031,7 +4406,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"contact",
 								"getchanges"
 							]
@@ -4046,6 +4421,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -4059,7 +4438,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/getcontacts",
+							"raw": "https://api.emarsys.net/api/v2/email/getcontacts",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4068,7 +4447,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								"getcontacts"
 							]
@@ -4083,6 +4462,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -4096,7 +4479,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/export/filter",
+							"raw": "https://api.emarsys.net/api/v2/export/filter",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4105,7 +4488,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"export",
 								"filter"
 							]
@@ -4120,6 +4503,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -4133,7 +4520,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contact/getregistrations",
+							"raw": "https://api.emarsys.net/api/v2/contact/getregistrations",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4142,7 +4529,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"contact",
 								"getregistrations"
 							]
@@ -4157,6 +4544,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -4170,7 +4561,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/getresponses",
+							"raw": "https://api.emarsys.net/api/v2/email/getresponses",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4179,7 +4570,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"email",
 								"getresponses"
 							]
@@ -4194,6 +4585,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -4203,7 +4598,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/export/:exportId",
+							"raw": "https://api.emarsys.net/api/v2/export/:exportId",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4212,7 +4607,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"export",
 								":exportId"
 							],
@@ -4241,7 +4636,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/export/:exportId/data?offset=0&limit=",
+							"raw": "https://api.emarsys.net/api/v2/export/:exportId/data?offset=0&limit=",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4250,7 +4645,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"export",
 								":exportId",
 								"data"
@@ -4355,6 +4750,10 @@
 						"method": "GET",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -4405,6 +4804,10 @@
 						"method": "PUT",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -4452,6 +4855,10 @@
 					"request": {
 						"method": "PATCH",
 						"header": [
+							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
 							{
 								"key": "Accept",
 								"value": "application/json"
@@ -4501,6 +4908,10 @@
 						"method": "POST",
 						"header": [
 							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
+							{
 								"key": "Accept",
 								"value": "application/json"
 							},
@@ -4546,6 +4957,10 @@
 					"request": {
 						"method": "POST",
 						"header": [
+							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
 							{
 								"key": "Accept",
 								"value": "application/json"
@@ -4597,6 +5012,10 @@
 					"request": {
 						"method": "POST",
 						"header": [
+							{
+								"key": "X-WSSE",
+								"value": "{{wsse-header}}"
+							},
 							{
 								"key": "Accept",
 								"value": "application/json"
@@ -4663,7 +5082,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/settings",
+							"raw": "https://api.emarsys.net/api/v2/settings",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4672,7 +5091,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"settings"
 							]
 						},
@@ -4695,7 +5114,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/administrator/query/:administratorId",
+							"raw": "https://api.emarsys.net/api/v2/administrator/query/:administratorId",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4704,7 +5123,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"administrator",
 								"query",
 								":administratorId"
@@ -4734,7 +5153,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/administrator",
+							"raw": "https://api.emarsys.net/api/v2/administrator",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4743,7 +5162,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"administrator"
 							]
 						},
@@ -4770,7 +5189,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/administrator",
+							"raw": "https://api.emarsys.net/api/v2/administrator",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4779,7 +5198,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"administrator"
 							]
 						},
@@ -4806,7 +5225,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/administrator/:administratorId/patch",
+							"raw": "https://api.emarsys.net/api/v2/administrator/:administratorId/patch",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4815,7 +5234,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"administrator",
 								":administratorId",
 								"patch"
@@ -4845,7 +5264,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/administrator/:administratorId/delete",
+							"raw": "https://api.emarsys.net/api/v2/administrator/:administratorId/delete",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4854,7 +5273,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"administrator",
 								":administratorId",
 								"delete"
@@ -4884,7 +5303,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/administrator/getaccesslevels",
+							"raw": "https://api.emarsys.net/api/v2/administrator/getaccesslevels",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4893,7 +5312,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"administrator",
 								"getaccesslevels"
 							]
@@ -4921,7 +5340,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/administrator/:administratorId/session",
+							"raw": "https://api.emarsys.net/api/v2/administrator/:administratorId/session",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4930,7 +5349,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"administrator",
 								":administratorId",
 								"session"
@@ -4960,7 +5379,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/administrator/getinterfacelanguages",
+							"raw": "https://api.emarsys.net/api/v2/administrator/getinterfacelanguages",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4969,7 +5388,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"administrator",
 								"getinterfacelanguages"
 							]
@@ -4993,7 +5412,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/administrator/getstartpages",
+							"raw": "https://api.emarsys.net/api/v2/administrator/getstartpages",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -5002,7 +5421,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"administrator",
 								"getstartpages"
 							]
@@ -5031,7 +5450,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/keyring/keys",
+							"raw": "https://api.emarsys.net/api/v2/keyring/keys",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -5040,7 +5459,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"keyring",
 								"keys"
 							]
@@ -5064,7 +5483,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/settings/keyring/keys/:keyId",
+							"raw": "https://api.emarsys.net/api/v2/settings/keyring/keys/:keyId",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -5073,7 +5492,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"settings",
 								"keyring",
 								"keys",
@@ -5108,7 +5527,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/settings/keyrings",
+							"raw": "https://api.emarsys.net/api/v2/settings/keyrings",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -5117,7 +5536,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"settings",
 								"keyrings"
 							]
@@ -5141,7 +5560,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/keyring/keys/:keyId/delete",
+							"raw": "https://api.emarsys.net/api/v2/keyring/keys/:keyId/delete",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -5150,7 +5569,7 @@
 							],
 							"path": [
 								"api",
-								"v3",
+								"v2",
 								"keyring",
 								"keys",
 								":keyId",
@@ -5218,48 +5637,21 @@
 			]
 		}
 	],
-	"auth": {
-		"type": "oauth2",
-		"oauth2": [
-			{
-				"key": "tokenName",
-				"value": "my Token",
-				"type": "string"
-			},
-			{
-				"key": "clientSecret",
-				"value": "{{OIDC_Secret}}",
-				"type": "string"
-			},
-			{
-				"key": "clientId",
-				"value": "{{OIDC_ClientID}}",
-				"type": "string"
-			},
-			{
-				"key": "accessTokenUrl",
-				"value": "https://auth.emarsys.net/oauth2/token",
-				"type": "string"
-			},
-			{
-				"key": "grant_type",
-				"value": "client_credentials",
-				"type": "string"
-			},
-			{
-				"key": "addTokenTo",
-				"value": "header",
-				"type": "string"
-			}
-		]
-	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
 				"type": "text/javascript",
-				"packages": {},
 				"exec": [
+					"const crypto_js = require('crypto-js');",
+					"",
+					"var ts = (new Date()).toISOString();",
+					"",
+					"var nonce = crypto_js.lib.WordArray.random(16).toString(crypto_js.enc.Hex);",
+					"",
+					"var digest = crypto_js.enc.Base64.stringify(crypto_js.enc.Utf8.parse(crypto_js.SHA1(nonce + ts + pm.environment.get(\"wsse-secret\")).toString(crypto_js.enc.Hex)));",
+					"",
+					"pm.environment.set(\"wsse-header\",'UsernameToken Username=\"' + pm.environment.get(\"wsse-user\") + '\", PasswordDigest=\"' + digest + '\", Created=\"' + ts + '\", nonce=\"' + nonce + '\"');",
 					""
 				]
 			}
@@ -5268,7 +5660,6 @@
 			"listen": "test",
 			"script": {
 				"type": "text/javascript",
-				"packages": {},
 				"exec": [
 					""
 				]
