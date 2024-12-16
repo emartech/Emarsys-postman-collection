@@ -3,6 +3,8 @@ This document describes the Emarsys Suite API v3, which uses OpenID Connect (OAu
 
 Other API collections, including the Emarsys suite WSSE APIs can be found [here](./wsse_APIs/)
 
+## For an open source alternative to Postman, this collection is also compatible with Bruno, as described [here](#Using-this-collection-with-Bruno).
+
 
 ## How to install
 1. First, make sure you have Postman installed. These collections are meant to be used with the program Postman, which can be downloaded here: https://www.postman.com/downloads/
@@ -10,19 +12,18 @@ Other API collections, including the Emarsys suite WSSE APIs can be found [here]
   ![Graphic displaying the location of the "code" and "download ZIP" buttons on the current github page](./readme-images/github-download-steps.png)
 3. Extract the files from the .zip folder
 4. With Postman installed and the collections downloaded, click on the import button in the top-left:
-  ![Postman import button](./readme-images//import-button.png)
+  ![Postman import button](./readme-images/import-button.png)
 1. Select The upload files option:
     ![Postman upload files option](./readme-images/upload-files-button.png)
-1. Select each of the files from the downloaded package (The readme.md and readme-images folder are okay to select too, but aren't necessary)
-    ![Postman file selector with all files from package highlighted](./readme-images/file-selector.png)
+1. Select the file "Emarsys Postman Collection" from the downloaded files
+    ![Postman file selector with "Emarsys Postman Collection" highlighted](./readme-images/file-selector-oauth.png)
 1. Finally, select the import button to confirm and the package will be fully installed!
-  ![Postman interface displaying all the highlighted files, waiting for confirmation to import](./readme-images/final-import-button.png)
  
 
 
 
 
-## Setting up your API user
+## Setting up your API user in Postman
 
 1. First, create your API user in Emarsys. Open your account, select Management by clicking the wrench icon from pop-out menu on the left of the page, then click "Security Settings"
 1. Click the API icon from the menu on the left, then click "Create API Credentials" and select OpenID Connect as the authentication type to make credentials that will work with this collection 
@@ -37,3 +38,45 @@ Other API collections, including the Emarsys suite WSSE APIs can be found [here]
 1. In the "Enter Value" checkbox, enter the value you saved from the Emarsys API user creation screen. Do this for Client ID and Client Secret. The text for each will turn from red to blue once it's configured correctly
 1. Scroll to the bottom of the window and click the Orange "Get New Access Token" button. Postman will take a moment to make sure your credentials work, then report it was successful. Click "Proceed" on this window, then click "Use Token"
 1. Your credentials are now configured!
+
+
+# Using this collection with Bruno
+
+[Bruno](https://docs.usebruno.com/) is an open-source API tool that is very similar to Postman, but is fully free to use and is supported by the Open-Source community.
+
+This collection can be used with Bruno, with the following steps:
+
+1. Make sure you have Bruno installed. You can download Bruno here: https://www.usebruno.com/downloads
+1. Download this repository by clicking on the Green "Code" button at the top of this page, then "Download Zip":
+
+    ![Graphic displaying the location of the "code" and "download ZIP" buttons on the current github page](./readme-images/github-download-steps.png)
+
+1. Extract the files from the .zip folder
+1. With Bruno downloaded and the collections downloaded, click on the Import Collection button:
+
+    ![Graphic displaying the location of the "Import Collection" button in Bruno's UI](./readme-images/bruno-import-button.png)
+
+1. Select "Postman Collection" for the collection type
+1. Select the file "Emarsys_postman_collection.json" from the files you downloaded previously and press open:
+
+    ![Graphic displaying the file selector for importing Postman collection files into Bruno](./readme-images/bruno-file-selector.png)
+
+1. Bruno will then ask you where you'd like to save the imported collection. Select any location on your computer you would like to store your work in Bruno
+
+1. Open the location on your device where you saved the Bruno collection, we will need to add one more file manually. Select the file "oauth.js" from the bruno-resources folder of the files you downloaded previously and drag it into the Bruno collection folder
+
+![Graphic displaying the file selector for importing Postman collection files into Bruno](./readme-images/bruno-adding-auth-script.png)
+
+1. After your first installation, follow the steps for configuring your environments in the next section before sending your first request
+
+## Configuring Bruno for other Emarsys APIs
+
+This collection uses Bruno Environment Variables to manage the credentials for the account(s) you work with.
+![A sample of a fully-configured Bruno Environment](./readme-images/bruno-sample-oauth-environment.png)
+[This guide goes over how to create those environments](https://docs.usebruno.com/secrets-management/secret-variables)
+
+For help creating your API user and getting the credentials to put into the Bruno environment, see the section [#Setting up your API user in Postman](#Setting-up-your-API-user-in-Postman) of this document
+
+## Bruno-specific notes
+
+1. Bruno doesn't support "path parameters" which are parts of the link before the question mark that can be changed to determine what data you retrieve. These parameters are marked with a colon and then the parameter name (such as ":languageId" in the Fields/List Available Fields API). To use these in Bruno, simply replace the colon and the name with the value you'd like to send in your API request
