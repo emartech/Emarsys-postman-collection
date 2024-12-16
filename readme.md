@@ -5,8 +5,18 @@ Other API collections, including the Emarsys suite WSSE APIs can be found [here]
 
 ## For an open source alternative to Postman, this collection is also compatible with Bruno, as described [here](#Using-this-collection-with-Bruno).
 
+## Creating your API user
 
-## How to install
+1. Open your account, select Management by clicking the wrench icon from pop-out menu on the left of the page, then click "Security Settings"
+1. Click the API icon from the menu on the left, then click "Create API Credentials" and select OpenID Connect as the authentication type to make credentials that will work with this collection 
+![The Emarsys suite interface, opened to the API Credentials page, with a pop-up showing options for OpenID Connect or WSSE for authentication. There is a large red arrow pointed to OpenID Connect](./readme-images/oidc-authentication-type-selector.png)
+1. Your API user is now created! Be sure to copy your all of the credential details from the gray text boxes to a secure location immediately, as you won't be able to access them again
+1. Still on the API credentials page, look through the Permissions table and toggle any API actions you need to the Enabled status. If your needs change in the future, you can return to this page and enable more endpoints
+
+
+## Using with Postman
+
+### Installing the collection in Postman
 1. First, make sure you have Postman installed. These collections are meant to be used with the program Postman, which can be downloaded here: https://www.postman.com/downloads/
 1. Download this repository by clicking on the Green "Code" button at the top of this page, then "Download Zip":
   ![Graphic displaying the location of the "code" and "download ZIP" buttons on the current github page](./readme-images/github-download-steps.png)
@@ -19,17 +29,8 @@ Other API collections, including the Emarsys suite WSSE APIs can be found [here]
     ![Postman file selector with "Emarsys Postman Collection" highlighted](./readme-images/file-selector-oauth.png)
 1. Finally, select the import button to confirm and the package will be fully installed!
  
+### Setting up your API user in Postman
 
-
-
-
-## Setting up your API user in Postman
-
-1. First, create your API user in Emarsys. Open your account, select Management by clicking the wrench icon from pop-out menu on the left of the page, then click "Security Settings"
-1. Click the API icon from the menu on the left, then click "Create API Credentials" and select OpenID Connect as the authentication type to make credentials that will work with this collection 
-![The Emarsys suite interface, opened to the API Credentials page, with a pop-up showing options for OpenID Connect or WSSE for authentication. There is a large red arrow pointed to OpenID Connect](./readme-images/oidc-authentication-type-selector.png)
-1. Your API user is now created! Be sure to copy your all of the credential details from the gray text boxes to a secure location immediately, as you won't be able to access them again
-1. Still on the API credentials page, look through the Permissions table and toggle any API actions you need to the Enabled status. If your needs change in the future, you can return to this page and enable more endpoints
 1. In Postman, click on the folder for the Emarsys API collection, then select the Authorization tab
 1. Scroll down to the "Configure New Token" section where you will see red text in the boxes for Client ID and Client Secret
 ![The program Postman, with the Authorization configuration panel open for the collection called "Emarsys - Suite and Sales APIs - V3. There is a large red circle around the parameters for Client ID and Client Secret, which highlights the red text {{OIDC_ClientID}} and {{OIDC_Secret}}, respectively."](./readme-images/postman-oauth-configuration.png)
@@ -44,7 +45,7 @@ Other API collections, including the Emarsys suite WSSE APIs can be found [here]
 
 [Bruno](https://docs.usebruno.com/) is an open-source API tool that is very similar to Postman, but is fully free to use and is supported by the Open-Source community.
 
-This collection can be used with Bruno, with the following steps:
+### Installing the collection in Bruno
 
 1. Make sure you have Bruno installed. You can download Bruno here: https://www.usebruno.com/downloads
 1. Download this repository by clicking on the Green "Code" button at the top of this page, then "Download Zip":
@@ -67,15 +68,22 @@ This collection can be used with Bruno, with the following steps:
 
 ![Graphic displaying the file selector for importing Postman collection files into Bruno](./readme-images/bruno-adding-auth-script.png)
 
-1. After your first installation, follow the steps for configuring your environments in the next section before sending your first request
+1. In Bruno, find the section on the left titled "Emarsys - Suite and Sales APIs - V3" and click on the three-dot menu, then click settings. This page is the Collection configuration page, where we will be updating the Script using the script tab. In that tab, paste the following into the "Pre Request" section:
 
-## Configuring Bruno for other Emarsys APIs
+```
+const oAuth = require('./oauth.js')
+
+await oAuth.signRequest(bru.getEnvVar('CLIENT_ID'), bru.getEnvVar('CLIENT_SECRET'));
+```
+
+1. Bruno is now configured and ready for you to fill in your API credentials.Follow the steps for configuring your environments in the next section before sending your first request
+
+### Setting up your API user in Bruno
 
 This collection uses Bruno Environment Variables to manage the credentials for the account(s) you work with.
 ![A sample of a fully-configured Bruno Environment](./readme-images/bruno-sample-oauth-environment.png)
 [This guide goes over how to create those environments](https://docs.usebruno.com/secrets-management/secret-variables)
 
-For help creating your API user and getting the credentials to put into the Bruno environment, see the section [#Setting up your API user in Postman](#Setting-up-your-API-user-in-Postman) of this document
 
 ## Bruno-specific notes
 
