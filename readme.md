@@ -77,7 +77,7 @@ This document describes the Emarsys Suite API v3, which uses OpenID Connect (OAu
 ```
 const oAuth = require('./oauth.js')
 
-await oAuth.signRequest(bru.getEnvVar('CLIENT_ID'), bru.getEnvVar('CLIENT_SECRET'));
+await oAuth.signRequest(bru.getEnvVar('SCI_HOST'),bru.getEnvVar('CLIENT_ID'), bru.getEnvVar('CLIENT_SECRET'));
 ```
 
 1. Bruno is now configured and ready for you to fill in your API credentials.Follow the steps for configuring your environments in the next section before sending your first request

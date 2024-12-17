@@ -3,9 +3,9 @@
 const https = require('https');
 
 class OAuth {
-  async signRequest(clientId, clientSecret) {
+  async signRequest(sciHost, clientId, clientSecret) {
 
-    const sciHost = "https://auth.emarsys.net/oauth2/token"
+    sciHost = sciHost ? sciHost : "https://auth.emarsys.net/oauth2/token"
 
     const date = new Date().getTime();
     let token = bru.getVar('OAUTH_TOKEN_' + clientId);
