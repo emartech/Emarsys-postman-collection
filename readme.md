@@ -79,6 +79,7 @@ const oAuth = require('./oauth.js')
 
 await oAuth.signRequest(bru.getEnvVar('OIDC_SCI_HOST'),bru.getEnvVar('OIDC_CLIENT_ID'), bru.getEnvVar('OIDC_CLIENT_SECRET'));
 ```
+**Be sure to click Save**
 
 1. Bruno is now configured and ready for you to fill in your API credentials.Follow the steps for configuring your environments in the next section before sending your first request
 
