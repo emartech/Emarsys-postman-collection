@@ -1,9 +1,13 @@
-# Emarsys API Postman collections
+# Emarsys API Developer tooling
+**Written in the Postman format and tested with Bruno**
+
 This document describes the Emarsys Suite API v3, which uses OpenID Connect (OAuth 2.0 client credentials grant) authentication. 
 
-Other API collections, including the Emarsys suite WSSE APIs can be found [here](./wsse_APIs/)
+- Other API collections, including the Emarsys suite WSSE APIs: [link](./wsse_APIs/)
+- Introduction to Emarsys API: [link](https://help.emarsys.com/hc/en-us/articles/115004745889-API-Introduction-to-the-Emarsys-API)
+- Creating your API credentials: [link](https://help.emarsys.com/hc/en-us/articles/22036625729554-Security-settings-API-Credentials)
 
-## For an open source alternative to Postman, this collection is also compatible with Bruno, as described [here](#Using-this-collection-with-Bruno).
+### For an open source alternative to Postman, this collection is also compatible with Bruno, as described [here](#Using-this-collection-with-Bruno).
 
 ## Creating your API user
 
