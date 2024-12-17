@@ -77,7 +77,7 @@ This document describes the Emarsys Suite API v3, which uses OpenID Connect (OAu
 ```
 const oAuth = require('./oauth.js')
 
-await oAuth.signRequest(bru.getEnvVar('SCI_HOST'),bru.getEnvVar('CLIENT_ID'), bru.getEnvVar('CLIENT_SECRET'));
+await oAuth.signRequest(bru.getEnvVar('OIDC_SCI_HOST'),bru.getEnvVar('OIDC_CLIENT_ID'), bru.getEnvVar('OIDC_CLIENT_SECRET'));
 ```
 
 1. Bruno is now configured and ready for you to fill in your API credentials.Follow the steps for configuring your environments in the next section before sending your first request
@@ -85,9 +85,12 @@ await oAuth.signRequest(bru.getEnvVar('SCI_HOST'),bru.getEnvVar('CLIENT_ID'), br
 ### Setting up your API user in Bruno
 
 This collection uses Bruno Environment Variables to manage the credentials for the account(s) you work with.
-![A sample of a fully-configured Bruno Environment](./readme-images/bruno-sample-oauth-environment.png)
+![A sample of a fully-configured Bruno Environment, with variables OIDC_CLIENT_ID and OIDC_CLIENT_SECRET set](./readme-images/bruno-sample-oauth-environment.png)
 [This guide goes over how to create those environments](https://docs.usebruno.com/secrets-management/secret-variables)
 
+The required variables are:
+- OIDC_CLIENT_ID
+- OIDC_CLIENT_SECRET
 
 ## Bruno-specific notes
 
