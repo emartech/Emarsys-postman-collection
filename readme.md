@@ -78,7 +78,7 @@ This document describes the Emarsys Suite API v3, which uses OpenID Connect (OAu
 ```
 const oAuth = require('./oauth.js')
 
-await oAuth.signRequest(bru.getEnvVar('OIDC_SCI_HOST'),bru.getEnvVar('OIDC_CLIENT_ID'), bru.getEnvVar('OIDC_CLIENT_SECRET'));
+await oAuth.signRequest(bru.getEnvVar('OIDC_SCI_HOST'),bru.getEnvVar('OIDC_CLIENT_ID'), bru.getEnvVar('OIDC_SECRET'));
 ```
 **Be sure to click Save**
 
@@ -87,12 +87,12 @@ await oAuth.signRequest(bru.getEnvVar('OIDC_SCI_HOST'),bru.getEnvVar('OIDC_CLIEN
 ### Setting up your API user in Bruno
 
 This collection uses Bruno Environment Variables to manage the credentials for the account(s) you work with.
-![A sample of a fully-configured Bruno Environment, with variables OIDC_CLIENT_ID and OIDC_CLIENT_SECRET set](./readme-images/bruno-sample-oauth-environment.png)
+![A sample of a fully-configured Bruno Environment, with variables OIDC_CLIENT_ID and OIDC_SECRET set](./readme-images/bruno-sample-oauth-environment-config.png)
 [This guide goes over how to create those environments](https://docs.usebruno.com/secrets-management/secret-variables)
 
 The required variables are:
 - OIDC_CLIENT_ID
-- OIDC_CLIENT_SECRET
+- OIDC_SECRET
 
 **Note** If you are using [SAP Cloud Identities](https://help.emarsys.com/hc/en-us/articles/22036625729554-Security-settings-API-Credentials#openid-connect-sap-cloud-identity) to manage your Emarsys API credentials, you will need to add your Access Token URL in the variable "OIDC_SCI_HOST"
 
