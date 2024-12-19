@@ -69,16 +69,14 @@ This document describes the Emarsys Suite API v3, which uses OpenID Connect (OAu
 
 1. Bruno will then ask you where you'd like to save the imported collection. Select any location on your computer you would like to store your work in Bruno
 
-1. Open the location on your device where you saved the Bruno collection, we will need to add one more file manually. Select the file "oauth.js" from the bruno-resources folder of the files you downloaded previously and drag it into the Bruno collection folder
-
-![Graphic displaying the file selector for importing Postman collection files into Bruno](./readme-images/bruno-adding-auth-script.png)
-
 1. In Bruno, find the section on the left titled "Emarsys - Suite and Sales APIs - V3" and click on the three-dot menu, then click settings. This page is the Collection configuration page, where we will be updating the Script using the script tab. In that tab, paste the following into the "Pre Request" section:
 
 ```
-const oAuth = require('./oauth.js')
-
-await oAuth.signRequest(bru.getEnvVar('OIDC_SCI_HOST'),bru.getEnvVar('OIDC_CLIENT_ID'), bru.getEnvVar('OIDC_SECRET'));
+const h=require('https');class OAuth{async sr(s,ci,cs){s=s?s:"https://auth.emarsys.net/oauth2/token"
+    const date=new Date().getTime();let t=bru.getVar('OAUTH_TOKEN_'+ci);let te=bru.getVar('OAUTH_TOKEN_'+ci+'_EXPIRY');if(!t||te<date){const jwt=await this.gt(s,ci,cs);if(jwt.expires_in&&jwt.access_token){const ed=date+(jwt.expires_in-60)*1000;bru.setVar('OAUTH_TOKEN_'+ci,jwt.access_token);bru.setVar('OAUTH_TOKEN_'+ci+'_EXPIRY',ed);t=bru.getVar('OAUTH_TOKEN_'+ci);}}
+    req.setHeader('Authorization','Bearer '+t)}
+    async gt(s,ci,cs){return new Promise((resolve,reject)=>{const url=s;const options={method:'POST',headers:{'content-type':'application/x-www-form-urlencoded','Accept':'application/json','authorization':'Basic '+Buffer.from(ci+':'+cs).toString('base64'),},};const req=h.request(url,options,(res)=>{let data='';res.on('data',(chunk)=>{data+=chunk});res.on('end',()=>{try{resolve(JSON.parse(data))}catch(error){reject()}})});req.on('error',()=>{reject()});req.write('grant_type=client_credentials');req.end()})}}
+    await new OAuth().sr(bru.getEnvVar('OIDC_SCI_HOST'),bru.getEnvVar('OIDC_CLIENT_ID'),bru.getEnvVar('OIDC_SECRET'))
 ```
 **Be sure to click Save**
 
