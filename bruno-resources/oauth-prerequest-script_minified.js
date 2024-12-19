@@ -1,0 +1,5 @@
+const h=require('https');class OAuth{async sr(s,ci,cs){s=s?s:"https://auth.emarsys.net/oauth2/token"
+    const date=new Date().getTime();let t=bru.getVar('OAUTH_TOKEN_'+ci);let te=bru.getVar('OAUTH_TOKEN_'+ci+'_EXPIRY');if(!t||te<date){const jwt=await this.gt(s,ci,cs);if(jwt.expires_in&&jwt.access_token){const ed=date+(jwt.expires_in-60)*1000;bru.setVar('OAUTH_TOKEN_'+ci,jwt.access_token);bru.setVar('OAUTH_TOKEN_'+ci+'_EXPIRY',ed);t=bru.getVar('OAUTH_TOKEN_'+ci);}}
+    req.setHeader('Authorization','Bearer '+t)}
+    async gt(s,ci,cs){return new Promise((resolve,reject)=>{const url=s;const options={method:'POST',headers:{'content-type':'application/x-www-form-urlencoded','Accept':'application/json','authorization':'Basic '+Buffer.from(ci+':'+cs).toString('base64'),},};const req=h.request(url,options,(res)=>{let data='';res.on('data',(chunk)=>{data+=chunk});res.on('end',()=>{try{resolve(JSON.parse(data))}catch(error){reject()}})});req.on('error',()=>{reject()});req.write('grant_type=client_credentials');req.end()})}}
+    await new OAuth().sr(bru.getEnvVar('OIDC_SCI_HOST'),bru.getEnvVar('OIDC_CLIENT_ID'),bru.getEnvVar('OIDC_SECRET'))

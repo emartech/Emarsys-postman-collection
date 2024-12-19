@@ -1,5 +1,3 @@
-'use strict';
-
 const https = require('https');
 
 class OAuth {
@@ -73,4 +71,6 @@ class OAuth {
 
 }
 
-module.exports = new OAuth();
+const oAuth = new OAuth();
+
+await oAuth.signRequest(bru.getEnvVar('OIDC_SCI_HOST'),bru.getEnvVar('OIDC_CLIENT_ID'), bru.getEnvVar('OIDC_SECRET'));
