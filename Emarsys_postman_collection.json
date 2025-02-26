@@ -5216,6 +5216,65 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Engagement Events",
+			"item": [
+				{
+					"name": "Ingest an event",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.emarsys.net/api/engagementevent/v1/integrations/:integrationId/eventConfigurations/:eventConfigurationId/events",
+							"protocol": "https",
+							"host": [
+								"api",
+								"emarsys",
+								"net"
+							],
+							"path": [
+								"api",
+								"engagementevent",
+								"v1",
+								"integrations",
+								":integrationId",
+								"eventConfigurations",
+								":eventConfigurationId",
+								"events"
+							],
+							"variable": [
+								{
+									"key": "integrationId"
+								},
+								{
+									"key": "eventConfigurationId"
+								}
+							]
+						},
+						"description": "Ingest an event to be processed by the Engagement Events API"
+					},
+					"response": []
+				}
+			]
 		}
 	],
 	"auth": {
