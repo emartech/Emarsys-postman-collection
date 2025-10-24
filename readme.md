@@ -15,7 +15,7 @@ This document describes the Emarsys Suite API v3, which uses OpenID Connect (OAu
 1. Click the API icon from the menu on the left, then click "Create API Credentials" and select OpenID Connect as the authentication type to make credentials that will work with this collection 
 ![The Emarsys suite interface, opened to the API Credentials page, with a pop-up showing options for OpenID Connect or WSSE for authentication. There is a large red arrow pointed to OpenID Connect](./readme-images/oidc-authentication-type-selector.png)
 1. Your API user is now created! Be sure to copy your all of the credential details from the gray text boxes to a secure location immediately, as you won't be able to access them again
-1. Still on the API credentials page, look through the Permissions table and toggle any API actions you need to the Enabled status. If your needs change in the future, you can return to this page and enable more endpoints
+1. Still on the API credentials page, look through the Permissions table and toggle any API actions you need to the Enabled status. If your needs change in the future, you can return to this page and enable more endpoints. You can find a guide to which permissions are needed for which APIs [here](https://help.sap.com/docs/SAP_EMARSYS/8bf21e3e3ad3475bb9e25de1e0ac3d86/fdf0296874c11014bb9cc486fb1dde02.html).
 
 
 ## Using with Postman
