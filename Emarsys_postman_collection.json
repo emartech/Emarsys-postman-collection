@@ -4364,7 +4364,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/rds/connections/:connectionName/tables/:tableName/records?{keyField}={{{keyField}}}",
+							"raw": "https://api.emarsys.net/api/rds/v1/connections/:connectionName/tables/:tableName/records?{keyField}={{{keyField}}}",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4418,7 +4418,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/rds/connections/:connectionName/tables/:tableName/records",
+							"raw": "https://api.emarsys.net/api/rds/v1/connections/:connectionName/tables/:tableName/records",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4466,7 +4466,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/rds/connections/:connectionName/tables/:tableName/records",
+							"raw": "https://api.emarsys.net/api/rds/v1/connections/:connectionName/tables/:tableName/records",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4514,7 +4514,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/rds/connections/:connectionName/tables/<:tableName>/records",
+							"raw": "https://api.emarsys.net/api/rds/v1/connections/:connectionName/tables/<:tableName>/records",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4560,7 +4560,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/rds/connections/:connectionName/tables/:tableName/records/remove",
+							"raw": "https://api.emarsys.net/api/rds/v1/connections/:connectionName/tables/:tableName/records/remove",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -4611,7 +4611,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/rds/connections/:connectionName/tables/:tableName/records/upsert",
+							"raw": "https://api.emarsys.net/api/rds/v1/connections/:connectionName/tables/:tableName/records/upsert",
 							"protocol": "https",
 							"host": [
 								"api",
