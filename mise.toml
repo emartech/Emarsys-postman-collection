@@ -1,0 +1,60 @@
+[tasks.check-node]
+hide = true
+description = "Ensure Node.js is available"
+run = """
+if ! command -v node &> /dev/null; then
+  echo "Node.js not found, installing via mise..."
+  mise use node@lts
+else
+  echo "Node.js found: $(node --version)"
+fi
+"""
+
+[tasks.init-submodules]
+hide = true
+description = "Initialize private environments submodule if not already checked out"
+run = """
+if [ ! -f postman/environments-private/README.md ]; then
+  if git ls-remote git@github.com:emartech/emarsys-api-postman-environments.git &>/dev/null; then
+    echo "Access to private environments confirmed, initializing submodule..."
+    git submodule update --init postman/environments-private
+  else
+    echo "No access to private environments repo (skipping — only public environments will be available)"
+  fi
+else
+  echo "Private environments submodule already present, skipping init."
+fi
+"""
+
+[tasks.install-deps]
+hide = true
+description = "Install npm dependencies if needed"
+depends = ["check-node"]
+run = """
+if [ ! -d node_modules ] || [ package.json -nt node_modules ]; then
+  echo "Installing dependencies..."
+  npm install --silent
+else
+  echo "Dependencies up to date, skipping npm install."
+fi
+"""
+
+[tasks.setup-bruno]
+description = "Generate Bruno collection from Postman source"
+depends = ["install-deps", "init-submodules"]
+run = """
+node scripts/postman-to-bruno.js
+"""
+
+[tasks.update-submodules]
+description = "Update the private environments submodule to latest"
+run = """
+if git ls-remote git@github.com:emartech/emarsys-api-postman-environments.git &>/dev/null; then
+  echo "Updating private environments submodule..."
+  git submodule update --remote postman/environments-private
+  echo "Done."
+else
+  echo "No access to private environments repo."
+  exit 1
+fi
+"""

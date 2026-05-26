@@ -12,3 +12,7 @@ node_modules/
 log/
 *.log
 
+# Bruno collection is generated from Postman source via: mise run setup-bruno
+bruno/*
+!bruno/.gitkeep
+bruno/.env.*

@@ -1,0 +1,25 @@
+{
+  "name": "emarsys-postman-collection",
+  "version": "1.0.0",
+  "description": "**Available in Postman and Bruno formats**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qw3r/emarsys-api-collections.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/qw3r/emarsys-api-collections/issues"
+  },
+  "homepage": "https://github.com/qw3r/emarsys-api-collections#readme",
+  "devDependencies": {
+    "@usebruno/converters": "0.20.0",
+    "yaml": "2.9.0"
+  }
+}

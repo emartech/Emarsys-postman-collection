@@ -1,0 +1,3 @@
+[submodule "postman/environments-private"]
+	path = postman/environments-private
+	url = git@github.com:emartech/emarsys-api-environments-private.git

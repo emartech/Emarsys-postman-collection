@@ -1,0 +1,32 @@
+{
+  "id": "f0cd9bcc-6b28-4511-8f60-d93eb9d44f51",
+  "name": "Emarsys EU Production",
+  "values": [
+    {
+      "key": "apiHost",
+      "value": "api.emarsys.net",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "OIDC_TokenUrl",
+      "value": "https://auth.emarsys.net/oauth2/token",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "OIDC_ClientId",
+      "value": "",
+      "type": "secret",
+      "enabled": true
+    },
+    {
+      "key": "OIDC_Secret",
+      "value": "",
+      "type": "secret",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_using": "manual"
+}

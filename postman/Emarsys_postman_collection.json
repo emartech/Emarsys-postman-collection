@@ -25,12 +25,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contact/query/?return=3&3=sample-email@email.com&excludeempty=true",
+							"raw": "https://{{apiHost}}/api/v3/contact/query/?return=3&3=sample-email@email.com&excludeempty=true",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -89,12 +87,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contact/getdata",
+							"raw": "https://{{apiHost}}/api/v3/contact/getdata",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -126,12 +122,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contact?create_if_not_exists={{create_if_not_exists}}",
+							"raw": "https://{{apiHost}}/api/v3/contact?create_if_not_exists={{create_if_not_exists}}",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -168,12 +162,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contact",
+							"raw": "https://{{apiHost}}/api/v3/contact",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -204,12 +196,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contact/delete",
+							"raw": "https://{{apiHost}}/api/v3/contact/delete",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -237,12 +227,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contact/query/:keyId=:keyValue",
+							"raw": "https://{{apiHost}}/api/v3/contact/query/:keyId=:keyValue",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -280,12 +268,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contact/checkids",
+							"raw": "https://{{apiHost}}/api/v3/contact/checkids",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -317,12 +303,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contact/getcontacthistory",
+							"raw": "https://{{apiHost}}/api/v3/contact/getcontacthistory",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -355,12 +339,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/field/translate/:languageId",
+							"raw": "https://{{apiHost}}/api/v3/field/translate/:languageId",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -399,12 +381,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/field",
+							"raw": "https://{{apiHost}}/api/v3/field",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -431,12 +411,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/field/:fieldID/choice/translate/:languageId",
+							"raw": "https://{{apiHost}}/api/v3/field/:fieldID/choice/translate/:languageId",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -475,12 +453,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contact/last_change",
+							"raw": "https://{{apiHost}}/api/v3/contact/last_change",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -512,12 +488,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/field/:fieldId",
+							"raw": "https://{{apiHost}}/api/v3/field/:fieldId",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -555,12 +529,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contactlist",
+							"raw": "https://{{apiHost}}/api/v3/contactlist",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -591,12 +563,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contactlist",
+							"raw": "https://{{apiHost}}/api/v3/contactlist",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -626,12 +596,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contactlist/:listId/add",
+							"raw": "https://{{apiHost}}/api/v3/contactlist/:listId/add",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -669,12 +637,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contactlist/:listId/rename",
+							"raw": "https://{{apiHost}}/api/v3/contactlist/:listId/rename",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -708,12 +674,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contactlist/:listId/count",
+							"raw": "https://{{apiHost}}/api/v3/contactlist/:listId/count",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -751,12 +715,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contactlist/:listId/replace",
+							"raw": "https://{{apiHost}}/api/v3/contactlist/:listId/replace",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -794,12 +756,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v2/contactlist/:listId/contactIds?$skiptoken=0&$top=0",
+							"raw": "https://{{apiHost}}/api/v2/contactlist/:listId/contactIds?$skiptoken=0&$top=0",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -844,12 +804,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contactlist/:listId?offset=0&limit=",
+							"raw": "https://{{apiHost}}/api/v3/contactlist/:listId?offset=0&limit=",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -892,12 +850,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contactlist/:listId/contacts/:contactId",
+							"raw": "https://{{apiHost}}/api/v3/contactlist/:listId/contacts/:contactId",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -939,12 +895,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contactlist/:listId/delete",
+							"raw": "https://{{apiHost}}/api/v3/contactlist/:listId/delete",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -982,12 +936,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contactlist/:listId/deletelist",
+							"raw": "https://{{apiHost}}/api/v3/contactlist/:listId/deletelist",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -1026,12 +978,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/filter",
+							"raw": "https://{{apiHost}}/api/v3/filter",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -1062,12 +1012,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/filter",
+							"raw": "https://{{apiHost}}/api/v3/filter",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -1094,12 +1042,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/combinedsegments",
+							"raw": "https://{{apiHost}}/api/v3/combinedsegments",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -1130,12 +1076,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/combinedsegments",
+							"raw": "https://{{apiHost}}/api/v3/combinedsegments",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -1162,12 +1106,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/filter/:segmentId/contacts/count",
+							"raw": "https://{{apiHost}}/api/v3/filter/:segmentId/contacts/count",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -1202,12 +1144,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/filter/:segmentId/contacts?limit=&offset=0",
+							"raw": "https://{{apiHost}}/api/v3/filter/:segmentId/contacts?limit=&offset=0",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -1251,12 +1191,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/combinedsegments/:combinedSegmentId",
+							"raw": "https://{{apiHost}}/api/v3/combinedsegments/:combinedSegmentId",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -1293,12 +1231,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/combinedsegments/:combinedSegmentId",
+							"raw": "https://{{apiHost}}/api/v3/combinedsegments/:combinedSegmentId",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -1331,12 +1267,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/filter/:segmentId/contact_criteria",
+							"raw": "https://{{apiHost}}/api/v3/filter/:segmentId/contact_criteria",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -1370,12 +1304,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/filter/:segmentId/contacts/:contactId",
+							"raw": "https://{{apiHost}}/api/v3/filter/:segmentId/contacts/:contactId",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -1413,12 +1345,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/filter/:segmentId/delete",
+							"raw": "https://{{apiHost}}/api/v3/filter/:segmentId/delete",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -1456,12 +1386,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/source",
+							"raw": "https://{{apiHost}}/api/v3/source",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -1491,12 +1419,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/source/create",
+							"raw": "https://{{apiHost}}/api/v3/source/create",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -1524,12 +1450,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/source/:sourceId",
+							"raw": "https://{{apiHost}}/api/v3/source/:sourceId",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -1567,12 +1491,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/form",
+							"raw": "https://{{apiHost}}/api/v3/form",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -1604,12 +1526,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email?status={{status}}&launched={{launched}}&contactlist={{contactlist}}&showdeleted={{showdeleted}}&fromdate={{fromdate}}&todate={{todate}}&root_campaign_id={{root_campaign_id}}&template={{template}}&content_type={{content_type}}&campaign_type={{campaign_type}}&parent_campaign_id={{parent_campaign_id}}&behavior_channel={{behavior_channel}}&email_category={{email_category}}",
+							"raw": "https://{{apiHost}}/api/v3/email?status={{status}}&launched={{launched}}&contactlist={{contactlist}}&showdeleted={{showdeleted}}&fromdate={{fromdate}}&todate={{todate}}&root_campaign_id={{root_campaign_id}}&template={{template}}&content_type={{content_type}}&campaign_type={{campaign_type}}&parent_campaign_id={{parent_campaign_id}}&behavior_channel={{behavior_channel}}&email_category={{email_category}}",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -1694,12 +1614,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email",
+							"raw": "https://{{apiHost}}/api/v3/email",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -1726,12 +1644,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId?raw={{raw}}",
+							"raw": "https://{{apiHost}}/api/v3/email/:emailId?raw={{raw}}",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -1770,12 +1686,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/language",
+							"raw": "https://{{apiHost}}/api/v3/language",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -1802,12 +1716,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/emailcategory",
+							"raw": "https://{{apiHost}}/api/v3/emailcategory",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -1838,12 +1750,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/version",
+							"raw": "https://{{apiHost}}/api/v3/email/:emailId/version",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -1881,12 +1791,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/finalize",
+							"raw": "https://{{apiHost}}/api/v3/email/:emailId/finalize",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -1924,12 +1832,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/copy?name={{name}}",
+							"raw": "https://{{apiHost}}/api/v3/email/:emailId/copy?name={{name}}",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -1973,12 +1879,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/patch",
+							"raw": "https://{{apiHost}}/api/v3/email/:emailId/patch",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -2016,12 +1920,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/blacklist",
+							"raw": "https://{{apiHost}}/api/v3/blacklist",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -2052,12 +1954,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/updatesource",
+							"raw": "https://{{apiHost}}/api/v3/email/:emailId/updatesource",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -2095,12 +1995,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/delete",
+							"raw": "https://{{apiHost}}/api/v3/email/delete",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -2136,12 +2034,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/preview",
+							"raw": "https://{{apiHost}}/api/v3/email/:emailId/preview",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -2179,12 +2075,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/sendtestmail",
+							"raw": "https://{{apiHost}}/api/v3/email/:emailId/sendtestmail",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -2222,12 +2116,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/launch",
+							"raw": "https://{{apiHost}}/api/v3/email/:emailId/launch",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -2265,12 +2157,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/getdeliverystatus",
+							"raw": "https://{{apiHost}}/api/v3/email/getdeliverystatus",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -2302,12 +2192,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/responses",
+							"raw": "https://{{apiHost}}/api/v3/email/responses",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -2335,12 +2223,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:queryId/responses",
+							"raw": "https://{{apiHost}}/api/v3/email/:queryId/responses",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -2374,12 +2260,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/responsesummary?launch_id={{launch_id}}&start_date={{start_date}}&end_date={{end_date}}",
+							"raw": "https://{{apiHost}}/api/v3/email/:emailId/responsesummary?launch_id={{launch_id}}&start_date={{start_date}}&end_date={{end_date}}",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -2431,12 +2315,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/getlaunchesofemail",
+							"raw": "https://{{apiHost}}/api/v3/email/getlaunchesofemail",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -2464,12 +2346,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/personalization",
+							"raw": "https://{{apiHost}}/api/v3/email/:emailId/personalization",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -2507,12 +2387,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/url",
+							"raw": "https://{{apiHost}}/api/v3/email/:emailId/url",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -2550,12 +2428,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/unsubscribe",
+							"raw": "https://{{apiHost}}/api/v3/email/unsubscribe",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -2597,12 +2473,10 @@
 							}
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v2/email/:emailId/broadcast",
+							"raw": "https://{{apiHost}}/api/v2/email/:emailId/broadcast",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -2642,12 +2516,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/folder?folder={{folder}}",
+							"raw": "https://{{apiHost}}/api/v3/folder?folder={{folder}}",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -2684,12 +2556,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/folder",
+							"raw": "https://{{apiHost}}/api/v3/folder",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -2716,12 +2586,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/file?folder={{folder}}",
+							"raw": "https://{{apiHost}}/api/v3/file?folder={{folder}}",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -2758,12 +2626,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/file",
+							"raw": "https://{{apiHost}}/api/v3/file",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -2790,12 +2656,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/file/:fileId",
+							"raw": "https://{{apiHost}}/api/v3/file/:fileId",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -2832,12 +2696,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/file/:fileId/delete",
+							"raw": "https://{{apiHost}}/api/v3/file/:fileId/delete",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -2876,12 +2738,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/condition",
+							"raw": "https://{{apiHost}}/api/v3/condition",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -2913,12 +2773,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/templates",
+							"raw": "https://{{apiHost}}/api/v3/email/templates",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -2946,12 +2804,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/templates/:templateId",
+							"raw": "https://{{apiHost}}/api/v3/email/templates/:templateId",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -2990,12 +2846,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/trackedlinks/:linkId",
+							"raw": "https://{{apiHost}}/api/v3/email/:emailId/trackedlinks/:linkId",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -3037,12 +2891,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/trackedlinks/:linkId",
+							"raw": "https://{{apiHost}}/api/v3/email/:emailId/trackedlinks/:linkId",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -3080,12 +2932,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/settings/linkcategories",
+							"raw": "https://{{apiHost}}/api/v3/settings/linkcategories",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -3117,12 +2967,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/trackedlinks",
+							"raw": "https://{{apiHost}}/api/v3/email/:emailId/trackedlinks",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -3160,12 +3008,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/deletetrackedlinks/:linkId",
+							"raw": "https://{{apiHost}}/api/v3/email/:emailId/deletetrackedlinks/:linkId",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -3208,12 +3054,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/sections",
+							"raw": "https://{{apiHost}}/api/v3/email/:emailId/sections",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -3251,12 +3095,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/sections",
+							"raw": "https://{{apiHost}}/api/v3/email/:emailId/sections",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -3290,12 +3132,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/sections/:sectionId",
+							"raw": "https://{{apiHost}}/api/v3/email/:emailId/sections/:sectionId",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -3337,12 +3177,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/sections/:sectionId",
+							"raw": "https://{{apiHost}}/api/v3/email/:emailId/sections/:sectionId",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -3384,12 +3222,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/:emailId/sections/:sectionId/delete",
+							"raw": "https://{{apiHost}}/api/v3/email/:emailId/sections/:sectionId/delete",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -3437,12 +3273,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/rtm/mail_events/:eventType?from={{from}}&to={{to}}&email={{email}}&external_id={{external_id}}",
+							"raw": "https://{{apiHost}}/api/rtm/mail_events/:eventType?from={{from}}&to={{to}}&email={{email}}&external_id={{external_id}}",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -3501,12 +3335,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/rtm/mail_streams/:mailStreamId",
+							"raw": "https://{{apiHost}}/api/rtm/mail_streams/:mailStreamId",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -3544,12 +3376,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/event/:eventId",
+							"raw": "https://{{apiHost}}/api/v3/event/:eventId",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -3582,12 +3412,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/event/:eventId/usages",
+							"raw": "https://{{apiHost}}/api/v3/event/:eventId/usages",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -3632,12 +3460,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/event/:eventId",
+							"raw": "https://{{apiHost}}/api/v3/event/:eventId",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -3674,12 +3500,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/event",
+							"raw": "https://{{apiHost}}/api/v3/event",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -3710,12 +3534,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/event/:eventId/trigger",
+							"raw": "https://{{apiHost}}/api/v3/event/:eventId/trigger",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -3753,12 +3575,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/event/:eventId/delete",
+							"raw": "https://{{apiHost}}/api/v3/event/:eventId/delete",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -3797,12 +3617,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/ac/programs",
+							"raw": "https://{{apiHost}}/api/v3/ac/programs",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -3834,12 +3652,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/ac/programs/:program_id/abort",
+							"raw": "https://{{apiHost}}/api/v3/ac/programs/:program_id/abort",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -3879,12 +3695,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/ac/programs/:program_id/delete",
+							"raw": "https://{{apiHost}}/api/v3/ac/programs/:program_id/delete",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -3920,12 +3734,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/api/v2/programresource?service_id={{service_id}}&resource_id={{resource_id}}",
+							"raw": "https://{{apiHost}}/api/api/v2/programresource?service_id={{service_id}}&resource_id={{resource_id}}",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -3967,12 +3779,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/ac/programs/entrypoints/:nodeType/resources/:resourceId/runs",
+							"raw": "https://{{apiHost}}/api/v3/ac/programs/entrypoints/:nodeType/resources/:resourceId/runs",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -4022,12 +3832,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contact/getchanges",
+							"raw": "https://{{apiHost}}/api/v3/contact/getchanges",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -4059,12 +3867,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/getcontacts",
+							"raw": "https://{{apiHost}}/api/v3/email/getcontacts",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -4096,12 +3902,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/export/filter",
+							"raw": "https://{{apiHost}}/api/v3/export/filter",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -4133,12 +3937,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/contact/getregistrations",
+							"raw": "https://{{apiHost}}/api/v3/contact/getregistrations",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -4170,12 +3972,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/email/getresponses",
+							"raw": "https://{{apiHost}}/api/v3/email/getresponses",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -4203,12 +4003,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/export/:exportId",
+							"raw": "https://{{apiHost}}/api/v3/export/:exportId",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -4241,12 +4039,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/export/:exportId/data?offset=0&limit=",
+							"raw": "https://{{apiHost}}/api/v3/export/:exportId/data?offset=0&limit=",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -4299,12 +4095,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/hds/events/customers/:customerId/events/providers/:provider/channels/:channel/campaign_types/:campaignType/event_types/:eventType",
+							"raw": "https://{{apiHost}}/api/hds/events/customers/:customerId/events/providers/:provider/channels/:channel/campaign_types/:campaignType/event_types/:eventType",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -4364,12 +4158,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/rds/v1/connections/:connectionName/tables/:tableName/records?{keyField}={{{keyField}}}",
+							"raw": "https://{{apiHost}}/api/rds/v1/connections/:connectionName/tables/:tableName/records?{keyField}={{{keyField}}}",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -4418,12 +4210,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/rds/v1/connections/:connectionName/tables/:tableName/records",
+							"raw": "https://{{apiHost}}/api/rds/v1/connections/:connectionName/tables/:tableName/records",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -4466,12 +4256,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/rds/v1/connections/:connectionName/tables/:tableName/records",
+							"raw": "https://{{apiHost}}/api/rds/v1/connections/:connectionName/tables/:tableName/records",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -4514,12 +4302,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/rds/v1/connections/:connectionName/tables/<:tableName>/records",
+							"raw": "https://{{apiHost}}/api/rds/v1/connections/:connectionName/tables/<:tableName>/records",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -4560,12 +4346,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/rds/v1/connections/:connectionName/tables/:tableName/records/remove",
+							"raw": "https://{{apiHost}}/api/rds/v1/connections/:connectionName/tables/:tableName/records/remove",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -4611,12 +4395,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/rds/v1/connections/:connectionName/tables/:tableName/records/upsert",
+							"raw": "https://{{apiHost}}/api/rds/v1/connections/:connectionName/tables/:tableName/records/upsert",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -4663,12 +4445,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/settings",
+							"raw": "https://{{apiHost}}/api/v3/settings",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -4695,12 +4475,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/administrator/query/:administratorId",
+							"raw": "https://{{apiHost}}/api/v3/administrator/query/:administratorId",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -4734,12 +4512,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/administrator",
+							"raw": "https://{{apiHost}}/api/v3/administrator",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -4770,12 +4546,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/administrator",
+							"raw": "https://{{apiHost}}/api/v3/administrator",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -4806,12 +4580,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/administrator/:administratorId/patch",
+							"raw": "https://{{apiHost}}/api/v3/administrator/:administratorId/patch",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -4845,12 +4617,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/administrator/:administratorId/delete",
+							"raw": "https://{{apiHost}}/api/v3/administrator/:administratorId/delete",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -4884,12 +4654,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/administrator/getaccesslevels",
+							"raw": "https://{{apiHost}}/api/v3/administrator/getaccesslevels",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -4921,12 +4689,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/administrator/:administratorId/session",
+							"raw": "https://{{apiHost}}/api/v3/administrator/:administratorId/session",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -4960,12 +4726,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/administrator/getinterfacelanguages",
+							"raw": "https://{{apiHost}}/api/v3/administrator/getinterfacelanguages",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -4993,12 +4757,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/administrator/getstartpages",
+							"raw": "https://{{apiHost}}/api/v3/administrator/getstartpages",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -5031,12 +4793,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/keyring/keys",
+							"raw": "https://{{apiHost}}/api/v3/keyring/keys",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -5064,12 +4824,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/settings/keyring/keys/:keyId",
+							"raw": "https://{{apiHost}}/api/v3/settings/keyring/keys/:keyId",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -5108,12 +4866,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/settings/keyrings",
+							"raw": "https://{{apiHost}}/api/v3/settings/keyrings",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -5141,12 +4897,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.emarsys.net/api/v3/keyring/keys/:keyId/delete",
+							"raw": "https://{{apiHost}}/api/v3/keyring/keys/:keyId/delete",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -5244,12 +4998,10 @@
 							}
 						},
 						"url": {
-							"raw": "https://api.emarsys.net/api/engagementevent/v1/integrations/:integrationId/eventConfigurations/:eventConfigurationId/events",
+							"raw": "https://{{apiHost}}/api/engagementevent/v1/integrations/:integrationId/eventConfigurations/:eventConfigurationId/events",
 							"protocol": "https",
 							"host": [
-								"api",
-								"emarsys",
-								"net"
+								"{{apiHost}}"
 							],
 							"path": [
 								"api",
@@ -5282,7 +5034,12 @@
 		"oauth2": [
 			{
 				"key": "tokenName",
-				"value": "my Token",
+				"value": "credentials",
+				"type": "string"
+			},
+			{
+				"key": "headerPrefix",
+				"value": "Bearer",
 				"type": "string"
 			},
 			{
@@ -5292,12 +5049,12 @@
 			},
 			{
 				"key": "clientId",
-				"value": "{{OIDC_ClientID}}",
+				"value": "{{OIDC_ClientId}}",
 				"type": "string"
 			},
 			{
 				"key": "accessTokenUrl",
-				"value": "https://auth.emarsys.net/oauth2/token",
+				"value": "{{OIDC_TokenUrl}}",
 				"type": "string"
 			},
 			{
@@ -5312,6 +5069,13 @@
 			}
 		]
 	},
+	"variable": [
+		{
+			"key": "apiHost",
+			"value": "api.emarsys.net",
+			"type": "string"
+		}
+	],
 	"event": [
 		{
 			"listen": "prerequest",
