@@ -1,4 +1,5 @@
 # Emarsys API Developer tooling
+
 **Written in the Postman format and tested with Bruno**
 
 This document describes the Emarsys Suite API v3, which uses OpenID Connect (OAuth 2.0 client credentials grant) authentication. 
@@ -7,7 +8,7 @@ This document describes the Emarsys Suite API v3, which uses OpenID Connect (OAu
 - Introduction to Emarsys API: [link](https://help.emarsys.com/hc/en-us/articles/115004745889-API-Introduction-to-the-Emarsys-API)
 - Creating your API credentials: [link](https://help.emarsys.com/hc/en-us/articles/22036625729554-Security-settings-API-Credentials)
 
-### For an open source alternative to Postman, this collection is also compatible with Bruno, as described [here](#Using-this-collection-with-Bruno).
+**For an open source alternative to Postman, this collection is also compatible with Bruno, as described [here](#Using-this-collection-with-Bruno).**
 
 ## Creating your API user
 
@@ -20,11 +21,12 @@ To create your API user, follow [this documentation guide for OpenID Connect](ht
 ## Using with Postman
 
 ### Installing the collection in Postman
+
 1. First, make sure you have Postman installed. These collections are meant to be used with the program Postman, which can be downloaded here: https://www.postman.com/downloads/
 1. Download this repository by clicking on the Green "Code" button at the top of this page, then "Download Zip":
   ![Graphic displaying the location of the "code" and "download ZIP" buttons on the current github page](./readme-images/github-download-steps.png)
-3. Extract the files from the .zip folder
-4. With Postman installed and the collections downloaded, click on the import button in the top-left:
+1. Extract the files from the .zip folder
+1. With Postman installed and the collections downloaded, click on the import button in the top-left:
   ![Postman import button](./readme-images/import-button.png)
 1. Select The upload files option:
     ![Postman upload files option](./readme-images/upload-files-button.png)
@@ -46,7 +48,7 @@ To create your API user, follow [this documentation guide for OpenID Connect](ht
 1. Your credentials are now configured!
 
 
-# Using this collection with Bruno
+## Using this collection with Bruno
 
 [Bruno](https://docs.usebruno.com/) is an open-source API tool that is very similar to Postman, but is fully free to use and is supported by the Open-Source community.
 
